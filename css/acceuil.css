@@ -1,0 +1,352 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+/*--------------------------------------------------ENTETE------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/uuu.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+header .nom{
+    position: absolute;
+    top: 5vh;
+    left: 5%;
+    color: white;
+}
+
+header .nom h1{
+    font-size: 300%;
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+}
+
+header .nom h2{
+    font-size: x-large;
+}
+
+/*--------------------------------------------------NAVIGATION--------------------------------------------------------------------*/
+
+
+.nav{
+    position: absolute;
+    top: 6vh;
+    right: 0%;
+    width: 35%;
+    height: 4vh;
+}
+
+.nav ul{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.nav ul li{
+    list-style: none;
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+
+.nav ul li a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    transition: all .1s ease-out;
+}
+.nav ul li a:hover{
+    border-bottom: solid rgb(0, 255, 255);
+}
+.nav ul li a:active{
+    border-bottom: solid rgb(0, 255, 255,);
+    background-color: rgb(0, 255, 255, 0.5);
+}
+.nav ul li:first-child a{
+    border-bottom: solid rgb(255, 0, 255);
+    background-color: rgb(255, 0, 255, 0.5);
+    transition: all .2s ease-out;
+}
+.nav ul li:first-child a:hover{
+    border-bottom: solid rgb(0, 255, 255);
+}
+.nav ul li:first-child a:active{
+    background-color: rgb(0, 255, 255, 0.5);
+}
+
+/*--------------------------------------------------------IMAGES------------------------------------------------------------------*/
+
+.vert img{
+    width: 100%;
+    height: 100%;
+}
+.vert{
+    position: absolute;   
+    left: 0%;
+    width: 8%;
+    height: 40vh;
+    top: 25vh;
+    animation: slidv 7s;
+}
+@keyframes slidv{
+    from{
+        transform:translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+.rose img{
+    width: 100%;
+    height: 100%;
+}
+
+.rose{
+    position: absolute;
+    left: 35%;
+    width: 25%;
+    height: 20vh;
+    top: 0vh;
+    animation: slidr 7s;
+}
+@keyframes slidr{
+    from{
+        transform:translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*-----------------------------------------------------------TEXT-----------------------------------------------------------------*/
+
+header .text{
+    position: absolute;
+    top: 50vh;
+    right: 25%;
+    transform: rotate(5deg);
+}
+header .text h1{
+    color: white;
+    font-weight: bold;
+    font-size: 400%;
+    animation: slidtext 5s;
+}
+@keyframes slidtext{
+    from{
+        transform:translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------RESEAUX----------------------------------------------------------------*/
+
+.reseaux{
+    display: flex;
+    width: 15%;
+    height: 3vh;
+    position: absolute;
+    bottom: 0.5vh;
+    left: 5%
+}
+.reseaux ol{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.reseaux ol li a{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------PROFIL------------------------------------------------------------*/
+
+.Profil {
+    color: white;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Profil h2{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 5%;
+    text-decoration: underline wavy rgb(0, 255, 0);
+}
+.Profil p{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    text-align: left;
+}
+
+/*----------------------------------------------------------------PORFOLIO--------------------------------------------------------*/
+
+.Porfolio{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.Porfolio h2{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 8%;
+    text-decoration: underline wavy rgb(0, 255, 0);
+}
+.ligne{
+    width: 100%;
+    margin-top: 5%;
+    height: 28vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+.Porfolio .ligne .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    height: 100%;
+}
+.Porfolio .ligne .col h3{
+    color: white;
+}
+.Porfolio .ligne .col .cards{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly
+}
+.Porfolio .ligne .col .card{
+    background-image: linear-gradient(rgba(0, 255, 0, 0.7), rgba(255, 255, 255, 0.8), rgba(0, 255, 0, 0.7)),
+                  url("");
+    width: 40%;
+    height: 100%;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 40%;
+    height: 80%;
+}
+
+/*-------------------------------------------------------------PIED DE PAGE--------------------------------------------------------*/
+
+.footer{
+    background-image: url("../image/footer.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.footer h2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 5%;
+    color: white;
+    text-decoration: underline wavy rgb(0, 255, 0);
+}
+.footer .formulaire{
+    height: 50vh;
+    width: 60%;
+    position: absolute;
+    top: 25vh;
+    left: 20%;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer .formulaire .lc{
+    width: 85%;
+    height: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .formulaire .lc .cont{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer .formulaire .lc .cont h3{
+    height: 50%;
+    font-size: x-large;
+    font-weight: bold;
+}
+.footer .formulaire .lc .cont a{
+    text-decoration: none;
+    color: white;
+    height: 50%;
+    font-size:medium;
+    border: solid rgb(0, 255, 0);
+    padding-top: 1%;
+}
+.creer{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    bottom: 1vh;
+}
+.creer h3 em{
+    text-decoration: underline wavy rgb(0, 255, 0);
+}

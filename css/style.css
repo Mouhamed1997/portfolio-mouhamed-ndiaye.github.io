@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6530st');
+  src:  url('fonts/icomoon.eot?6530st#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6530st') format('truetype'),
+    url('fonts/icomoon.woff?6530st') format('woff'),
+    url('fonts/icomoon.svg?6530st#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copy:before {
+  content: "\e92c";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-facebook:before {
+  content: "\66";
+}
+.icon-instagram:before {
+  content: "\69";
+}
+.icon-whatsapp:before {
+  content: "\77";
+}
+.icon-linkedin2:before {
+  content: "\6c";
+}
+.res{
+  color: rgb(255, 0, 255);
+  animation: anim 3s;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: x-large;
+  border-radius: 20%;
+}
+@keyframes anim{
+  from{
+    color: rgb(0, 255, 0);
+  }
+  to{
+    color: rgb(255, 0, 255);
+  }
+}
+.res:hover{
+  background-color: rgb(0, 255, 0);
+  width: 150%;
+  color: black;
+}
+.res:active{
+  background-color: rgb(255, 0, 255);
+  color: black;
+}
